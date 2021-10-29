@@ -84,22 +84,14 @@ const LeftMenu = () => {
     thrdImg: false,
     frthImg: false,
   });
-  const [css, setCss] = useState({
-    firstImg: false,
-    secImg: false,
-    thrdImg: false,
-    frthImg: false,
-  })
-
+ 
   function handleSwitchChange(e) {
-    console.log(e.target);
     setState({
       ...state,
       [e.target.name]: e.target.checked,
     });
-    // setCss({
-    //     ...css,
-    // })
+    alert(e.target.name + ' hide');
+  
   }
   return (
     <div>
